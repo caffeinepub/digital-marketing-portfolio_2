@@ -1,0 +1,57 @@
+{
+  "kind": "build_request",
+  "title": "Add phone number and email to contact section",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "text": "Update the ContactSection component (frontend/src/components/ContactSection.tsx) to display phone number '7997411133' and email 'thanishaivana004@gmail.com' in the Let's Connect section",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "For let's connect add \nphone number:7997411133 \nEmail: thanishaivana004@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Phone number '7997411133' is displayed in the contact section with appropriate formatting",
+        "Email 'thanishaivana004@gmail.com' is displayed in the contact section",
+        "Contact information is visible in the Let's Connect section with consistent styling matching the burgundy/pink theme"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Update the backend ContactInfo type and setContactInfo function in backend/main.mo to store phone number '7997411133' and email 'thanishaivana004@gmail.com'",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "For let's connect add \nphone number:7997411133 \nEmail: thanishaivana004@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend ContactInfo stores phone number '7997411133'",
+        "Backend ContactInfo stores email 'thanishaivana004@gmail.com'",
+        "Contact information persists across canister upgrades"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing burgundy/dusty pink color theme in the contact section",
+    "Preserve the existing card grid layout with icons and hover effects",
+    "Do not modify the Internet Identity authentication hooks"
+  ],
+  "nonGoals": [
+    "Adding additional contact fields beyond phone and email",
+    "Implementing email validation or phone number formatting logic",
+    "Creating a contact form submission feature"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
