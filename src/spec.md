@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Add phone number and email to the contact section of the portfolio website.
+**Goal:** Update the hero background image and adjust the color theme to match the new image.
 
 **Planned changes:**
-- Display phone number '7997411133' in the Let's Connect section
-- Display email 'thanishaivana004@gmail.com' in the Let's Connect section
-- Update backend to store contact information (phone and email)
+- Replace the Hero component background with the uploaded WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg
+- Update the application color theme to complement the new image, using colors from its palette (steel blues, burgundy reds, dusty pinks, charcoal grays, warm skin tones)
+- Place the image in frontend/public/assets/generated and reference it correctly in the Hero component
 
-**User-visible outcome:** Visitors can see the phone number and email address in the Let's Connect section of the portfolio.
+**User-visible outcome:** The portfolio will display the new hero background image with a cohesive color scheme throughout the application that harmonizes with the image's palette.

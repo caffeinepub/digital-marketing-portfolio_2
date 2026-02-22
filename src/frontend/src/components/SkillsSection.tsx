@@ -35,7 +35,7 @@ const skills = [
 
 export function SkillsSection() {
   return (
-    <section className="py-24 bg-secondary/30">
+    <section className="py-24 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
@@ -52,7 +52,7 @@ export function SkillsSection() {
             return (
               <div
                 key={skill.title}
-                className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-burgundy-glow"
+                className="group p-8 rounded-2xl bg-card border border-border hover:border-secondary/50 transition-all duration-300 hover:shadow-steel-glow"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="mb-4 inline-flex p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">

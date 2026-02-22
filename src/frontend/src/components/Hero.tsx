@@ -13,7 +13,7 @@ export function Hero() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(/assets/generated/WhatsApp Image 2026-02-22 at 11.34.16 AM (1).dim_1920x1080.jpeg)',
+          backgroundImage: 'url(/assets/generated/WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

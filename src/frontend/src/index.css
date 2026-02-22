@@ -5,81 +5,81 @@
 @layer base {
     :root {
         --radius: 0.75rem;
-        /* Deep navy-black background with warm undertones */
-        --background: 0.15 0.02 250;
-        --foreground: 0.97 0.01 30;
-        /* Burgundy-wine primary */
-        --primary: 0.48 0.18 15;
-        --primary-foreground: 0.97 0.01 30;
-        /* Dusty mauve secondary */
-        --secondary: 0.55 0.12 340;
-        --secondary-foreground: 0.97 0.01 30;
-        /* Muted warm gray */
-        --muted: 0.35 0.02 30;
-        --muted-foreground: 0.68 0.03 30;
-        /* Dusty pink accent */
-        --accent: 0.62 0.15 350;
-        --accent-foreground: 0.97 0.01 30;
-        /* Dark borders with warm tint */
-        --border: 0.28 0.02 30;
-        --input: 0.28 0.02 30;
-        --ring: 0.48 0.18 15;
-        /* Card with navy-black tint */
-        --card: 0.18 0.02 250;
-        --card-foreground: 0.97 0.01 30;
-        --popover: 0.18 0.02 250;
-        --popover-foreground: 0.97 0.01 30;
+        /* Deep charcoal background with cool undertones */
+        --background: 0.18 0.015 240;
+        --foreground: 0.96 0.01 30;
+        /* Deep burgundy-wine primary from image */
+        --primary: 0.42 0.16 10;
+        --primary-foreground: 0.96 0.01 30;
+        /* Steel blue secondary from graffiti */
+        --secondary: 0.52 0.10 230;
+        --secondary-foreground: 0.96 0.01 30;
+        /* Muted charcoal gray */
+        --muted: 0.38 0.015 240;
+        --muted-foreground: 0.68 0.02 240;
+        /* Dusty pink accent from plaid shirt */
+        --accent: 0.65 0.12 355;
+        --accent-foreground: 0.18 0.015 240;
+        /* Dark borders with cool tint */
+        --border: 0.28 0.015 240;
+        --input: 0.28 0.015 240;
+        --ring: 0.42 0.16 10;
+        /* Card with charcoal tint */
+        --card: 0.22 0.015 240;
+        --card-foreground: 0.96 0.01 30;
+        --popover: 0.22 0.015 240;
+        --popover-foreground: 0.96 0.01 30;
         /* Destructive red */
         --destructive: 0.55 0.22 15;
-        --destructive-foreground: 0.97 0.01 30;
+        --destructive-foreground: 0.96 0.01 30;
         /* Success teal */
         --success: 0.65 0.15 180;
-        --success-foreground: 0.97 0.01 30;
-        /* Chart colors - burgundy, pink, teal palette */
-        --chart-1: 0.48 0.18 15;
-        --chart-2: 0.62 0.15 350;
-        --chart-3: 0.55 0.12 340;
+        --success-foreground: 0.96 0.01 30;
+        /* Chart colors - burgundy, steel blue, dusty pink palette */
+        --chart-1: 0.42 0.16 10;
+        --chart-2: 0.65 0.12 355;
+        --chart-3: 0.52 0.10 230;
         --chart-4: 0.58 0.14 180;
-        --chart-5: 0.52 0.16 25;
+        --chart-5: 0.48 0.14 20;
     }
 
     .dark {
-        /* Pure black background with navy hint */
-        --background: 0.10 0.02 250;
-        --foreground: 0.97 0.01 30;
+        /* Pure black background with cool hint */
+        --background: 0.12 0.015 240;
+        --foreground: 0.96 0.01 30;
         /* Brighter burgundy for dark mode */
-        --primary: 0.55 0.20 15;
-        --primary-foreground: 0.10 0.02 250;
-        /* Medium dusty pink */
-        --secondary: 0.60 0.14 340;
-        --secondary-foreground: 0.97 0.01 30;
+        --primary: 0.50 0.18 10;
+        --primary-foreground: 0.12 0.015 240;
+        /* Brighter steel blue */
+        --secondary: 0.58 0.12 230;
+        --secondary-foreground: 0.96 0.01 30;
         /* Muted dark gray */
-        --muted: 0.25 0.02 30;
-        --muted-foreground: 0.70 0.03 30;
+        --muted: 0.28 0.015 240;
+        --muted-foreground: 0.72 0.02 240;
         /* Vivid dusty pink accent */
-        --accent: 0.68 0.17 350;
-        --accent-foreground: 0.10 0.02 250;
+        --accent: 0.70 0.14 355;
+        --accent-foreground: 0.12 0.015 240;
         /* Very dark borders */
-        --border: 0.22 0.02 30;
-        --input: 0.22 0.02 30;
-        --ring: 0.55 0.20 15;
+        --border: 0.24 0.015 240;
+        --input: 0.24 0.015 240;
+        --ring: 0.50 0.18 10;
         /* Almost black card */
-        --card: 0.14 0.02 250;
-        --card-foreground: 0.97 0.01 30;
-        --popover: 0.14 0.02 250;
-        --popover-foreground: 0.97 0.01 30;
+        --card: 0.16 0.015 240;
+        --card-foreground: 0.96 0.01 30;
+        --popover: 0.16 0.015 240;
+        --popover-foreground: 0.96 0.01 30;
         /* Destructive */
         --destructive: 0.60 0.24 15;
-        --destructive-foreground: 0.10 0.02 250;
+        --destructive-foreground: 0.12 0.015 240;
         /* Success */
         --success: 0.70 0.17 180;
-        --success-foreground: 0.10 0.02 250;
+        --success-foreground: 0.12 0.015 240;
         /* Chart colors - adjusted for dark */
-        --chart-1: 0.55 0.20 15;
-        --chart-2: 0.68 0.17 350;
-        --chart-3: 0.60 0.14 340;
+        --chart-1: 0.50 0.18 10;
+        --chart-2: 0.70 0.14 355;
+        --chart-3: 0.58 0.12 230;
         --chart-4: 0.62 0.16 180;
-        --chart-5: 0.58 0.18 25;
+        --chart-5: 0.54 0.16 20;
     }
 
     * {

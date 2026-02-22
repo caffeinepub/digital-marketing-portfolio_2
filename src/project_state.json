@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 11,
+  "projectStateVersion": 13,
   "summary": "Thanisha Ivana's digital marketing internship portfolio website - Institute of crafting compelling Digital experience to strategic marketing, creating content and data-driven campaigns. Professional, eye-catching design with three work showcase sections and contact information area",
   "architectural_notes": [
     "Single-page portfolio website suitable for digital marketing internship",
@@ -128,6 +128,30 @@
         "REQ-14"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-component-frontend-src-components-hero-tsx-to-replace-the-current-background-image-with-the-newly-uploaded-whatsapp-image-2026-02-22-at-11-34-16-am-1-1-jpeg-without-making-any-modifications-to-the-image-itself",
+      "title": "Update the Hero component (frontend/src/components/Hero.tsx) to replace the current background image with the newly uploaded WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg without making any modifications to the image itself",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-color-theme-throughout-the-application-frontend-index-css-frontend-tailwind-config-js-and-all-component-files-to-complement-and-harmonize-with-the-colors-in-the-newly-uploaded-image-using-colors-derived-from-the-image-s-palette-including-steel-blues-burgundy-reds-dusty-pinks-charcoal-grays-and-warm-skin-tones",
+      "title": "Update the color theme throughout the application (frontend/index.css, frontend/tailwind.config.js, and all component files) to complement and harmonize with the colors in the newly uploaded image, using colors derived from the image's palette including steel blues, burgundy reds, dusty pinks, charcoal grays, and warm skin tones",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-newly-uploaded-whatsapp-image-2026-02-22-at-11-34-16-am-1-1-jpeg-as-a-static-asset-from-frontend-public-assets-generated-and-reference-it-in-the-hero-component",
+      "title": "Render the newly uploaded WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg as a static asset from frontend/public/assets/generated and reference it in the Hero component",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -177,28 +201,6 @@
       "id": "AR-8",
       "summary": "Adjust color theme to match and complement the newly provided image",
       "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-9",
-      "summary": "Add phone number (7997411133) and email (thanishaivana004@gmail.com) to Let's Connect section",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-10",
-      "summary": "Update the ContactSection component (frontend/src/components/ContactSection.tsx) to display phone number '7997411133' and email 'thanishaivana004@gmail.com' in the Let's Connect section",
-      "reqIds": [
-        "REQ-15"
-      ],
-      "status": "pending"
-    },
-    {
-      "id": "AR-11",
-      "summary": "Update the backend ContactInfo type and setContactInfo function in backend/main.mo to store phone number '7997411133' and email 'thanishaivana004@gmail.com'",
-      "reqIds": [
-        "REQ-16"
-      ],
       "status": "pending"
     }
   ],

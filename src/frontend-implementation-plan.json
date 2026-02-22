@@ -1,21 +1,84 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add phone number and email to contact section",
+  "title": "Update hero background image and adjust color theme to match",
   "requirements": [
     {
       "id": "REQ-15",
-      "summary": "Update ContactSection component to display phone number and email in Let's Connect section",
+      "summary": "Update Hero component to use newly uploaded WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg as background image without modifications",
       "acceptanceCriteria": [
-        "Phone number '7997411133' is displayed in the contact section with appropriate formatting",
-        "Email 'thanishaivana004@gmail.com' is displayed in the contact section",
-        "Contact information is visible in the Let's Connect section with consistent styling matching the burgundy/pink theme"
+        "The Hero component uses WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg as the background image",
+        "The image is displayed as-is with no modifications",
+        "The image reference path points to frontend/public/assets/generated"
       ],
       "file_operations": [
         {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Replace the background image URL in the Hero component to reference the newly uploaded image at frontend/public/assets/generated/WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg. Update the backgroundImage style to use the new asset path without any image processing or modifications. Preserve all existing component structure, gradient overlays, text content, CTA buttons, and scroll indicator functionality."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Update color theme throughout the application to harmonize with the uploaded image's palette including steel blues, burgundy reds, dusty pinks, charcoal grays, and warm skin tones",
+      "acceptanceCriteria": [
+        "Color variables in frontend/index.css are updated to reflect colors from the uploaded image palette",
+        "Tailwind config custom colors are updated to use the new color scheme",
+        "All component files use the updated color tokens consistently",
+        "The overall design feels cohesive with the hero background image"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update the CSS custom properties in the :root selector to derive colors from the uploaded image palette. Replace existing OKLCH color values with new values that reflect steel blues, burgundy reds, dusty pinks, charcoal grays, and warm skin tones observed in the image. Maintain the same CSS variable names (--background, --foreground, --primary, --secondary, etc.) to preserve compatibility with existing components. Adjust both light and dark mode color definitions to ensure cohesion with the new hero background image."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Update the custom color extensions in the Tailwind config to align with the new color palette from the uploaded image. Modify the burgundy, pink, teal, and other custom color definitions to reflect steel blues, burgundy reds, dusty pinks, charcoal grays, and warm skin tones. Update glow effect colors in boxShadow to complement the new palette. Preserve all existing structure including typography plugins, custom fonts, and border radius variables."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update color classes and inline styles in the Hero component to use the new color tokens from the updated theme. Adjust text colors, glow effects, button styles, and gradient overlay colors to harmonize with the new background image. Ensure the burgundy glow effect on the heading and all text remain readable and visually cohesive with the updated palette."
+        },
+        {
           "path": "frontend/src/components/ContactSection.tsx",
           "operation": "modify",
-          "description": "Update the ContactSection component to display the phone number '7997411133' and email 'thanishaivana004@gmail.com' in the contact cards grid. Ensure the contact information is rendered with appropriate icons, maintains the existing burgundy/pink glow hover effects, and preserves the card grid layout structure. The phone and email should be displayed alongside the existing name and LinkedIn fields using the data fetched from the backend ContactInfo query."
+          "description": "Update color classes in the ContactSection component to use the new color tokens. Adjust card backgrounds, text colors, icon colors, and hover effects to align with the updated theme palette while maintaining readability and visual hierarchy."
+        },
+        {
+          "path": "frontend/src/components/PortfolioSection.tsx",
+          "operation": "modify",
+          "description": "Update color classes in the PortfolioSection component to use the new color tokens. Adjust card backgrounds, text colors, button styles, and hover effects to harmonize with the updated theme palette derived from the hero image."
+        },
+        {
+          "path": "frontend/src/components/SkillsSection.tsx",
+          "operation": "modify",
+          "description": "Update color classes in the SkillsSection component to use the new color tokens. Adjust grid item backgrounds, text colors, icon colors, and animation effects to complement the updated theme palette."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update color classes in the Footer component to use the new color tokens. Adjust background color, text color, and link colors to align with the updated theme palette."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Ensure the newly uploaded WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg is accessible as a static asset from frontend/public/assets/generated",
+      "acceptanceCriteria": [
+        "The image is placed in frontend/public/assets/generated directory",
+        "The Hero component correctly references the static asset path",
+        "The image loads properly in the browser"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Verify that the Hero component references the uploaded image using the correct static asset path: /assets/generated/WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg. Ensure the path is correctly formatted for Vite's public directory serving. Test that the image loads properly in the browser without 404 errors."
         }
       ]
     }

@@ -1,54 +1,71 @@
 {
   "kind": "build_request",
-  "title": "Add phone number and email to contact section",
+  "title": "Update hero background image and adjust color theme to match",
+  "projectName": "Thanisha Ivana Portfolio",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-15",
-      "text": "Update the ContactSection component (frontend/src/components/ContactSection.tsx) to display phone number '7997411133' and email 'thanishaivana004@gmail.com' in the Let's Connect section",
+      "text": "Update the Hero component (frontend/src/components/Hero.tsx) to replace the current background image with the newly uploaded WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg without making any modifications to the image itself",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-user-latest"
+          "msg-latest"
         ],
         "quotes": [
-          "For let's connect add \nphone number:7997411133 \nEmail: thanishaivana004@gmail.com"
+          "can you add the image that i sent right now do not change anything about it"
         ]
       },
       "acceptanceCriteria": [
-        "Phone number '7997411133' is displayed in the contact section with appropriate formatting",
-        "Email 'thanishaivana004@gmail.com' is displayed in the contact section",
-        "Contact information is visible in the Let's Connect section with consistent styling matching the burgundy/pink theme"
+        "The Hero component uses WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg as the background image",
+        "The image is displayed as-is with no modifications",
+        "The image reference path points to frontend/public/assets/generated"
       ]
     },
     {
       "id": "REQ-16",
-      "text": "Update the backend ContactInfo type and setContactInfo function in backend/main.mo to store phone number '7997411133' and email 'thanishaivana004@gmail.com'",
-      "target": "backend",
+      "text": "Update the color theme throughout the application (frontend/index.css, frontend/tailwind.config.js, and all component files) to complement and harmonize with the colors in the newly uploaded image, using colors derived from the image's palette including steel blues, burgundy reds, dusty pinks, charcoal grays, and warm skin tones",
+      "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-user-latest"
+          "msg-latest"
         ],
         "quotes": [
-          "For let's connect add \nphone number:7997411133 \nEmail: thanishaivana004@gmail.com"
+          "change the theme arccording to the image so it looks put together"
         ]
       },
       "acceptanceCriteria": [
-        "Backend ContactInfo stores phone number '7997411133'",
-        "Backend ContactInfo stores email 'thanishaivana004@gmail.com'",
-        "Contact information persists across canister upgrades"
+        "Color variables in frontend/index.css are updated to reflect colors from the uploaded image palette",
+        "Tailwind config custom colors are updated to use the new color scheme",
+        "All component files use the updated color tokens consistently",
+        "The overall design feels cohesive with the hero background image"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Render the newly uploaded WhatsApp Image 2026-02-22 at 11.34.16 AM (1)-1.jpeg as a static asset from frontend/public/assets/generated and reference it in the Hero component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The image is placed in frontend/public/assets/generated directory",
+        "The Hero component correctly references the static asset path",
+        "The image loads properly in the browser"
       ]
     }
   ],
   "constraints": [
-    "Maintain the existing burgundy/dusty pink color theme in the contact section",
-    "Preserve the existing card grid layout with icons and hover effects",
-    "Do not modify the Internet Identity authentication hooks"
+    "Do not modify the uploaded image itself in any way",
+    "Preserve the existing Hero component structure and functionality",
+    "Maintain all existing immutable frontend paths including hooks and UI components"
   ],
   "nonGoals": [
-    "Adding additional contact fields beyond phone and email",
-    "Implementing email validation or phone number formatting logic",
-    "Creating a contact form submission feature"
+    "Changing the layout or structure of the Hero component beyond the background image",
+    "Modifying any backend functionality",
+    "Adding new features or sections to the portfolio"
   ],
   "imageRequirements": {
     "required": [],

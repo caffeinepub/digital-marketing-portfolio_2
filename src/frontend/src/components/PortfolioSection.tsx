@@ -36,7 +36,7 @@ export function PortfolioSection({ title, description, projects, isLoading, icon
             {projects.map((project, index) => (
               <Card 
                 key={index}
-                className="group hover:shadow-pink-glow transition-all duration-300 hover:border-primary/50"
+                className="group hover:shadow-steel-glow transition-all duration-300 hover:border-secondary/50"
               >
                 <CardHeader>
                   <CardTitle className="font-display text-xl group-hover:text-primary transition-colors">
